@@ -1,0 +1,27 @@
+.form-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+}
+.btn {
+    background-color: #0a0a23;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 90px;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+}
+.btn:hover {
+    background-color: #2757da;
+    transition: 0.7s;
+}
+.serch-form {
+    padding: 10px;
+}
+.form-control {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #0a0a23;
+}
