@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    background-color: #f8f2f2;
+    
+}
+.js-card-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.card {
+    width: 288px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 2px solid rgb(224, 173, 30);
+    border-radius: 3%;
+    padding: 10px;
+}
+.card-text {
+    margin-bottom: 10px;
+}
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.card-img-top {
+    display: flex;
+    justify-content: center;
+}
+.list-group {
+    list-style: none;
+}
+.list-group-item {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
