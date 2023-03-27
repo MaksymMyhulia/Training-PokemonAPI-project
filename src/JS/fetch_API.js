@@ -12,11 +12,15 @@ function onSearch(event){
 
     const form = event.currentTarget;
     const searchQuery = form.elements.query.value
-
+if(searchQuery){
     API.fetchPokemon(searchQuery)
   .then(renderPokemonCard)
   .catch(onFetchError)
   .finally(() => form.reset())
+} else { 
+    refs.cardContainer.innerHTML = "";
+    Notify.info("Please, enter ID or name of pokemon!")
+}
 }
 
 function renderPokemonCard(pokemon) {
@@ -27,3 +31,4 @@ function renderPokemonCard(pokemon) {
 function onFetchError() {
     Notify.failure("Oops, something went wrong, we didn't find that pokemon!");
 }
+
